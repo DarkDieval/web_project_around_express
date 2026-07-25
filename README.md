@@ -15,12 +15,12 @@ API del proyecto "Around the US" desarrollada con **Node.js** y **Express.js**. 
 
 El servidor ofrece los siguientes endpoints:
 
-| Método | Ruta | Descripción | Código de éxito | Código de error |
-| :--- | :--- | :--- | :--- | :--- |
-| `GET` | `/users` | Devuelve la lista completa de todos los usuarios. | `200 OK` | `500` (Error del servidor) |
-| `GET` | `/users/:id` | Devuelve los datos de un usuario específico según su `_id`. | `200 OK` | `404` (Usuario no encontrado) / `500` |
-| `GET` | `/cards` | Devuelve la lista completa de todas las tarjetas. | `200 OK` | `500` (Error del servidor) |
-| `GET` | `/*` (Cualquier otra ruta) | Devuelve un mensaje de error indicando que el recurso no existe. | - | `404` (Recurso no encontrado) |
+| Método | Ruta                       | Descripción                                                      | Código de éxito | Código de error                       |
+| :----- | :------------------------- | :--------------------------------------------------------------- | :-------------- | :------------------------------------ |
+| `GET`  | `/users`                   | Devuelve la lista completa de todos los usuarios.                | `200 OK`        | `500` (Error del servidor)            |
+| `GET`  | `/users/:id`               | Devuelve los datos de un usuario específico según su `_id`.      | `200 OK`        | `404` (Usuario no encontrado) / `500` |
+| `GET`  | `/cards`                   | Devuelve la lista completa de todas las tarjetas.                | `200 OK`        | `500` (Error del servidor)            |
+| `GET`  | `/*` (Cualquier otra ruta) | Devuelve un mensaje de error indicando que el recurso no existe. | -               | `404` (Recurso no encontrado)         |
 
 ### 💡 Ejemplo de respuesta (GET /users/8340d0ec33270a25f2413b69)
 
@@ -31,3 +31,4 @@ El servidor ofrece los siguientes endpoints:
   "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Katherine_Johnson_1983.jpg/800px-Katherine_Johnson_1983.jpg",
   "_id": "8340d0ec33270a25f2413b69"
 }
+```
