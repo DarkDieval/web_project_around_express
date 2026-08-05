@@ -31,6 +31,7 @@ API RESTful para el proyecto "Around the US" desarrollada con **Node.js**, **Exp
 | `POST`   | `/cards`               | Crea una nueva tarjeta (el `owner` se toma del middleware). | `201 Created`   | `400`, `500`        |
 | `PUT`    | `/cards/:cardId/likes` | Agrega el like del usuario autenticado a la tarjeta.        | `200 OK`        | `400`, `404`, `500` |
 | `DELETE` | `/cards/:cardId/likes` | Quita el like del usuario autenticado de la tarjeta.        | `200 OK`        | `400`, `404`, `500` |
+| `DELETE` | `/cards/:cardId`       | Elimina una tarjeta por su `_id`.                           | `200 OK`        | `400`, `404`, `500` |
 
 ### 💡 Ejemplo de respuesta (GET /users/6a7323151211b9dc47648d61)
 
