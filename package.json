@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/DarkDieval/web_project_around_express#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mongoose": "^9.9.1"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
